@@ -8,8 +8,8 @@ steps:
       dockerfile: Dockerfile
       tags: latest
       insecure: false 
-      registry: registry.gujarulabs.cc
-      repo: registry.gujarulabs.cc/todoapi
+      registry: registry.gujarulab.cc
+      repo: registry.gujarulab.cc/todoapi
       username:
         from_secret: docker_username
       password:
