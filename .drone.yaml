@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: publish
+  image: mcr.microsoft.com/dotnet/sdk:6.0-alpine
+  commands:
+  - dotnet publish "todoapi.csproj" -c Release -o ./publish --runtime alpine-x64 --self-contained true /p:PublishTrimmed=true /p:TrimMode=Link /p:PublishSingleFile=true
