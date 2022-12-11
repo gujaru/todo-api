@@ -3,15 +3,15 @@ type: docker
 name: default
 
 steps:
-- name: publish-local-registry 
-  image: plugins/docker
-  settings:
-    dockerfile: Dockerfile
-    tags: latest
-    insecure: true
-    registry: "registry.gujarulabs.cc"
-    repo: "gujarulabs.cc/todoapi"
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
+  - name: publish-local-registry 
+    image: plugins/docker
+    settings:
+      dockerfile: Dockerfile
+      tags: latest
+      insecure: true
+      registry: "registry.gujarulabs.cc"
+      repo: "gujarulabs.cc/todoapi"
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
