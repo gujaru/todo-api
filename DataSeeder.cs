@@ -39,6 +39,14 @@ public class DataSeeder
                 )
                 {
                     Id=3
+                },
+                 new(
+                    "Review .net core",
+                    true,
+                    DateTime.Now.ToUniversalTime()
+                )
+                {
+                    Id=4
                 }
             };
 
